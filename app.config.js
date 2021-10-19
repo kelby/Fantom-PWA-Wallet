@@ -130,6 +130,11 @@ const appConfig = {
     settings: {
         // list of available currencies displayed in settings view ( https://en.wikipedia.org/wiki/ISO_4217 )
         currencies: ['USD', 'EUR'],
+        // I18n
+        language: [
+            { value: 'en', label: 'English' },
+            { value: 'zh-CN', label: '简体中文' },
+        ],
         // defi slippage reserve in percentage
         defaultDefiSlippageReserve: 0.3,
         // default funiswap slippage tolerance in percentage

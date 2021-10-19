@@ -4,13 +4,13 @@
             <div class="small-container">
                 <p>
                     <a href="https://fantom.foundation/how-to-use-fantom-wallet/" target="_blank">
-                        How to use Fantom fWallet
+                        {{ $t('how_to_use') }}
                     </a>
                 </p>
 
                 <p>
                     <a href="https://explorer.fantom.network/" target="_blank">
-                        Fantom Explorer
+                        {{ $t('explorer') }}
                     </a>
                 </p>
 

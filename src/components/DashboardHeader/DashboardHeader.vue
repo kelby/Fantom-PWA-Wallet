@@ -1,6 +1,6 @@
 <template>
     <div class="dashboard-header">
-        <h1>Home</h1>
+        <h1>{{ $t('home') }}</h1>
         <header>
             <dashboard-info-box />
         </header>

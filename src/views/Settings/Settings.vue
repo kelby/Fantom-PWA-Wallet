@@ -1,6 +1,6 @@
 <template>
     <div class="view-settings">
-        <h1>Settings</h1>
+        <h1>{{ $t('settings') }}</h1>
 
         <h2>fWallet</h2>
         <settings-form />
@@ -11,7 +11,7 @@
         <h2>Metamask</h2>
         <metamask-settings />
 
-        <h2>Links</h2>
+        <h2>{{ $t('links') }}</h2>
         <settings-links />
     </div>
 </template>

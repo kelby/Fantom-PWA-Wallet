@@ -4,14 +4,14 @@
             <div class="small-container">
                 <template v-if="isMetamaskInstalled">
                     <div class="metamasksettings_section">
-                        <h3>Networks</h3>
+                        <h3>{{ $t('networks') }}</h3>
                         <button
                             id="add_mainnet_btn"
                             class="btn large"
                             :disabled="addFantomMainnetInProgress"
                             @click="onAddChainClick('mainnet')"
                         >
-                            Add Fantom Opera Mainnet
+                            {{ $t('add_mainnet') }}
                             <pulse-loader v-if="addFantomMainnetInProgress" color="#fff"></pulse-loader>
                         </button>
                         <button
@@ -20,13 +20,13 @@
                             :disabled="addFantomTestnetInProgress"
                             @click="onAddChainClick('testnet')"
                         >
-                            Add Fantom Testnet
+                            {{ $t('add_testnet') }}
                             <pulse-loader v-if="addFantomTestnetInProgress" color="#1969ff"></pulse-loader>
                         </button>
                     </div>
 
                     <div class="metamasksettings_section">
-                        <h3>Assets</h3>
+                        <h3>{{ $t('assets') }}</h3>
                         <button
                             id="add_token_btn"
                             class="btn large"

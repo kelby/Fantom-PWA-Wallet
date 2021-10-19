@@ -1,7 +1,7 @@
 <template>
     <div class="gov-proposal-list">
         <h2 v-if="!windowMode" class="dt-heading">
-            Proposals <span class="f-records-count">({{ totalCount }})</span>
+            {{ $t('proposals') }} <span class="f-records-count">({{ totalCount }})</span>
         </h2>
         <f-card class="account-transaction-list-dt" :off="windowMode">
             <template v-if="!proposalsError">

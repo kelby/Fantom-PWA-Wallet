@@ -3,7 +3,7 @@
         <f-card class="window">
             <div class="header">
                 <h1>
-                    Create a new wallet
+                    {{ $t('create_a_new_wallet') }}
                     <span class="steps"> {{ dStep }} <span class="count">/ 4</span> </span>
                     <router-link to="/" class="router-link">
                         <icon data="@/assets/svg/times.svg" width="24" height="24"></icon>

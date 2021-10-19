@@ -1,6 +1,7 @@
 export const SET_BREAKPOINT = 'setBreakpoint';
 export const SET_TOKEN_PRICE = 'setTokenPrice';
 export const SET_CURRENCY = 'setCurrency';
+export const SET_LANGUAGE = 'setLanguage';
 export const SET_FRACTION_DIGITS = 'setFractionDigits';
 export const SET_DEFI_SLIPPAGE_RESERVE = 'setDefiSlippageReserve';
 export const SET_FUNISWAP_SLIPPAGE_TOLERANCE = 'setFUniswapSlippageTolerance';

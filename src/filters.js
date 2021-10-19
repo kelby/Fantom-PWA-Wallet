@@ -5,6 +5,7 @@ import { WEIToFTM } from './utils/transactions.js';
 export const filtersOptions = {
     currLocale: 'en-US',
     currency: 'USD',
+    language: 'en',
     fractionDigits: 2,
     tokenPrice: 0,
 };

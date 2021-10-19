@@ -37,6 +37,7 @@ import {
     PUSH_BNBRIDGE_PENDING_REQUEST,
     SET_BREAKPOINT,
     SET_CURRENCY,
+    SET_LANGUAGE,
     SET_DEFI_SLIPPAGE_RESERVE,
     SET_FRACTION_DIGITS,
     SET_DARK_MODE,
@@ -149,6 +150,17 @@ export default {
                 filtersOptions.currency = _currency;
                 this.$store.commit(SET_CURRENCY, _currency);
                 await this.setTokenPrice(_currency);
+            }
+        },
+
+        /**
+         * @param {string} _language
+         */
+        async setLanguage(_language) {
+            if (_language) {
+                filtersOptions.language = _language;
+                this.$i18n.locale = _language;
+                this.$store.commit(SET_LANGUAGE, _language);
             }
         },
 

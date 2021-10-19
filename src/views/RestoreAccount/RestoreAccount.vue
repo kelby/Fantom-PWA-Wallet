@@ -3,7 +3,7 @@
         <f-card class="window">
             <div class="header">
                 <h1>
-                    Restore wallet
+                    {{ $t('restore_wallet') }}
                     <span class="steps">
                         {{ dStep }} <span class="count">/ {{ dStepsCount }}</span>
                     </span>

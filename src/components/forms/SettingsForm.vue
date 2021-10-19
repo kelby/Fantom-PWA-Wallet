@@ -21,7 +21,13 @@
                             :value="$store.state.fractionDigits.toString()"
                         />
 
-                        <f-select name="language" label="Language" select-size="large" :data="language" value="en-US" />
+                        <f-select
+                            name="language"
+                            label="Language"
+                            select-size="large"
+                            :data="language"
+                            :value="$store.state.language"
+                        />
 
                         <!--
                         <f-input
@@ -78,7 +84,7 @@ export default {
 
     data() {
         return {
-            language: [{ value: 'en-US', label: 'English' }],
+            // language: [{ value: 'en-US', label: 'English' }],
             fractionDigits: [
                 { value: '1', label: '1' },
                 { value: '2', label: '2' },
@@ -106,6 +112,25 @@ export default {
                 selectData.push({
                     value: _currency,
                     label: _currency,
+                });
+            });
+
+            return selectData;
+        },
+
+        /**
+         * Data for language select.
+         *
+         * @return {[]}
+         */
+        language() {
+            const selectData = [];
+            const { language } = appConfig.settings;
+
+            language.forEach((_language) => {
+                selectData.push({
+                    value: _language['value'],
+                    label: _language['label'],
                 });
             });
 
@@ -154,7 +179,9 @@ export default {
                 }
                 */
             } else if (detail.eTarget.name === 'language') {
-                alert('not implemented yet');
+                if (appNode) {
+                    appNode.setLanguage(detail.value);
+                }
             }
         },
 

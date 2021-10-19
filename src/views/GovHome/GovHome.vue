@@ -1,6 +1,6 @@
 <template>
     <div class="view-gov-home">
-        <h1>Governance</h1>
+        <h1>{{ $t('governance') }}</h1>
 
         <gov-proposal-list />
     </div>

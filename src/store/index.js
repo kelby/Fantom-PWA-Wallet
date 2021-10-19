@@ -14,6 +14,7 @@ import {
     SET_ACCOUNT,
     MOVE_ACCOUNT,
     SET_CURRENCY,
+    SET_LANGUAGE,
     SET_FRACTION_DIGITS,
     SET_SEND_DIRECTION,
     PUSH_BNBRIDGE_PENDING_REQUEST,
@@ -58,6 +59,7 @@ const vuexLocalStorage = new VuexPersist({
     reducer: (_state) => ({
         tokenPrice: _state.tokenPrice,
         currency: _state.currency,
+        language: _state.language,
         fractionDigits: _state.fractionDigits,
         defiSlippageReserve: _state.defiSlippageReserve,
         fUniswapSlippageTolerance: _state.fUniswapSlippageTolerance,
@@ -99,6 +101,7 @@ export const store = new Vuex.Store({
         breakpoints: {},
         tokenPrice: 0,
         currency: 'USD',
+        language: 'en',
         fractionDigits: 2,
         defiSlippageReserve: appConfig.settings.defaultDefiSlippageReserve,
         fUniswapSlippageTolerance: appConfig.settings.defaultFUniswapSlippageTolerance,
@@ -290,6 +293,13 @@ export const store = new Vuex.Store({
          */
         [SET_CURRENCY](_state, _currency) {
             _state.currency = _currency;
+        },
+        /**
+         * @param {Object} _state
+         * @param {string} _language
+         */
+        [SET_LANGUAGE](_state, _language) {
+            _state.language = _language;
         },
         /**
          * @param {Object} _state

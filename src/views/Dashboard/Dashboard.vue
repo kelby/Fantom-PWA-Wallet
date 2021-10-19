@@ -3,12 +3,12 @@
         <dashboard-header />
 
         <h2 class="h1">
-            Wallets <span class="f-records-count">({{ accounts.length }})</span>
+            {{ $t('wallets') }} <span class="f-records-count">({{ accounts.length }})</span>
         </h2>
         <account-list edit-mode />
 
         <h2 class="h1">
-            Contacts <span class="f-records-count">({{ contacts.length }})</span>
+            {{ $t('contacts') }} <span class="f-records-count">({{ contacts.length }})</span>
         </h2>
 
         <contact-list edit-mode />

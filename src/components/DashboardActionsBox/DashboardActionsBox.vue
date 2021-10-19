@@ -6,7 +6,7 @@
                     <button class="btn ledger-accounts-btn large same-size round">
                         <icon data="@/assets/svg/connect.svg" width="20" height="20" aria-hidden="true" />
                     </button>
-                    <span class="link-label ledger-accounts-color">Connect Wallet</span>
+                    <span class="link-label ledger-accounts-color">{{ $t('connect_wallet') }}</span>
                 </span>
             </li>
             <li>
@@ -14,7 +14,7 @@
                     <button class="btn create-account-btn large same-size round">
                         <icon data="@/assets/svg/wallet.svg" width="20" height="20" :fill="false" aria-hidden="true" />
                     </button>
-                    <span class="link-label create-account-color">Create Wallet</span>
+                    <span class="link-label create-account-color">{{ $t('create_wallet') }}</span>
                 </span>
             </li>
             <li>
@@ -22,7 +22,7 @@
                     <button class="btn restore-account-btn large same-size round">
                         <icon data="@/assets/svg/key.svg" width="20" height="20" aria-hidden="true" />
                     </button>
-                    <span class="link-label restore-account-color">Restore Wallet</span>
+                    <span class="link-label restore-account-color">{{ $t('restore_wallet') }}</span>
                 </span>
             </li>
         </ul>

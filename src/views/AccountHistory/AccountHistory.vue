@@ -2,15 +2,15 @@
     <div class="view-account-history account-main-content-mt">
         <f-tabs>
             <template #transactions>
-                Transactions
+                {{ $t('transactions') }}
                 <span class="f-records-count">({{ transactionsRecordsCount }})</span>
             </template>
             <template #assets>
-                Assets
+                {{ $t('assets') }}
                 <span class="f-records-count">({{ assetsRecordsCount }})</span>
             </template>
             <template #assets-old>
-                Assets old
+                {{ $t('assets_old') }}
                 <span class="f-records-count">({{ assetsRecordsCount }})</span>
             </template>
 
